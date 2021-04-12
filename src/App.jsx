@@ -13,9 +13,9 @@ function App() {
       <div>
         <Menu />
         <div className="page">
-          <Route path="/drift" component={DriftPage} />
-          <Route path="/timeattack" component={TimeAttackPage} />
-          <Route path="/forza" component={ForzaPage} />
+          <Route path="/drift" exact component={DriftPage} />
+          <Route path="/timeattack" exact component={TimeAttackPage} />
+          <Route path="/forza" exact component={ForzaPage} />
           <Route path="/" exact component={HomePage} />
         </div>
       </div>
